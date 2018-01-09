@@ -29,7 +29,7 @@ if (isset($_GET['v'])) {
 	} else {
 		$v = 0;
 	}
-echo $programs[$v][1];
+
 $_SESSION['pagename'] = $programs[$v][1];
 include "db/pushhits.php";
 ?>
@@ -59,12 +59,13 @@ include "db/pushhits.php";
 		</style>
 	</head>
 	<body>
+	<?php echo $programs[$v][1]; ?>
 		<div class="row">
 		<div class="col-M-6">
 			<div class="video-container">  
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $programs[$v][0] ?>" frameborder="0" allowfullscreen></iframe>	
 			</div>
-
+					Tri-Tech Programs 
 		</div>
 		<div class="menu col-3 col-s-3">
 		<li><a href="index.php?v=1">Auto Body Technology</a></li>

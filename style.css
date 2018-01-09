@@ -5,9 +5,12 @@ body {
 	margin:0;
 	padding:0;
 	font-family: system-ui, sans-serif;
-	background:linear-gradient(to bottom,#000,#F0F0FF),#E8E8FF;
+	background:linear-gradient(to bottom,#000,#0e295b);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 	color:#fff;
 	font-weight:bold;
+	font-size:24px;
 }
 header {
 	width:100%;
@@ -25,7 +28,6 @@ video {
 }
 .menu {
 	padding:1rem;
-	font-size:125%;
 	font-weight:bold;
 }
 .menu ul {
