@@ -1,53 +1,9 @@
 <html>
 <head>
 <title>tritechsc.org/programs/</title>
-<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" type="text/css" href="solarized.css">
 <style>
-body {margin: 0; padding: 0;
-background-color: #ffffff;
-color:#8d1af8;
-font-family:"Arial","sans-serif";color:#700070;font-size:12px;}
-pre{margin: 0; padding: 0;font-family:"Arial","sans-serif";color:#71b9cf;font-size:18px;}
 
-a{
-font-family:"Arial","sans-serif";
-font-size:18px;
-font-size:2em;
-color: #ffffff;
-background-color:#000;
-text-decoration:none;
-
-}
-
-a:hover {
-font-family: arial, san-serif;
-font-size:18px;
-font-size:2em;
-background-color: #111;
-color: #fff;
-text-decoration:none;
-
-}
-
-#list{
-position:absolute;
-text-align: left;
-top: 100px;
-left :100px;
-
-}
-#video-location{
-text-align: left;
-font-size:18px;
-color: #8d1af8;
-position:absolute;
-top: 150px;
-left :10px;
-width: 680px;
-height: 500px;
-z-index:0;
-}
 </style>
 </head>
 <body>
@@ -57,7 +13,7 @@ z-index:0;
     if ($handle = opendir('.')) {
     while (false !== ($file = readdir($handle)))
     {
-        if ($file != "." && $file != ".."&& $file != "index.php" && $file != "db")
+        if ($file != "." && $file != ".."&& $file != "index.php" && $file != "db" && $file != "solarized.css")
         {
             $thelist .= '<a href="'.$file.'" target = "_blank">'.$file.'</a><br />';
         }
@@ -65,8 +21,29 @@ z-index:0;
     closedir($handle);
     }
 ?>
-<div id= "list">
+<div class = "data">
+	DATA <br />
 <?php echo $thelist?>
-
+</div>
+<footer>
+<center>
+<div style="background-color:#002b36; color:white;padding:5px;">#002b36;</div>
+<div style="background-color:#073642; color:white;padding:5px;">#073642;</div>
+<div style="background-color:#586e75; color:white;padding:5px;">#586e75;</div>
+<div style="background-color:#657b83; color:white;padding:5px;">#657b83;</div>
+<div style="background-color:#839496; color:white;padding:5px;">#839496;</div>
+<div style="background-color:#93a1a1; color:white;padding:5px;">#93a1a1;</div>
+<div style="background-color:#eee8d5; color:white;padding:5px;">#eee8d5;</div>
+<div style="background-color:#fdf6e3; color:white;padding:5px;">#fdf6e3;</div>
+<div style="background-color:#b58900; color:white;padding:5px;">#b58900;</div>
+<div style="background-color:#cb4b16; color:white;padding:5px;">#cb4b16;</div>
+<div style="background-color:#dc322f; color:white;padding:5px;">#dc322f;</div>
+<div style="background-color:#d33682; color:white;padding:5px;">#d33682;</div>
+<div style="background-color:#6c71c4; color:white;padding:5px;">#6c71c4;</div>
+<div style="background-color:#268bd2; color:white;padding:5px;">#268bd2;</div>
+<div style="background-color:#2aa198; color:white;padding:5px;">#2aa198;</div>
+<div style="background-color:#859900; color:white;padding:5px;">#859900;</div>
+</center>
+</footer>
 </body>
 </head>

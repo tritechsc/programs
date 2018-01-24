@@ -1,535 +1,64 @@
-  <html><head><title>
- select all count </title></head>
- <style>
-
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-body {
-font-family: "Lucida Sans", sans-serif;
-font-size: 18px;
-    background-color: #000;
-    color: #00ff00;
-    padding: 5px;
-}
-
- </style>
- <body>
- 
- 
- <?php
- include 'db/db.php';
- // Auto-Body-Technology ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Auto-Body-Technology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- //Auto-Systems-Technology ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- $abt = 0;
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Auto-Systems-Technology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	   $abt = $count;
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Careers-in-Health-Care ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Careers-in-Health-Care";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// Construction-Trades ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Construction-Trades";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Cosmetology  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Cosmetology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Culinary-Arts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Culinary-Arts";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Cyber-Security ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Cyber-Security";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Dental-Assisting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Cosmetology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Diesel-Technology ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Diesel-Technology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Digital-Arts-Filmmaking ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Digital-Arts-Filmmaking";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Early-Childhood-Education ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Early-Childhood-Education";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Firefighting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Firefighting";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Game-Design ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Game-Design";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Law-Enforcement ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Law-Enforcement";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Pre-Nursing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Pre-Nursing";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Pre-Veterinary-Technician ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Pre-Veterinary-Technician";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Radio-Broadcasting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Radio-Broadcasting";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Teen-Parenting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Teen-Parenting";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//Welding-Technology ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Welding-Technology";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-//Tri-Tech~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "Tri-Tech-Programs";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-//LOC~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- echo "<hr />";
- try{ 
-# MySQL with PDO_MYSQL  
-	$DBH = new PDO("mysql:host=$host;database =$database ", $user, $pass); 
-	$pagename = "LOC";
-	echo $pagename." <br />";
-	$STH = $DBH->query("select distinct ip from ttcompsci.programs where pagename = \"$pagename\";");  
-	$STH->setFetchMode(PDO::FETCH_OBJ); 
-	$count = 0;
-	while($row = $STH->fetch()){
-		$count++;
-		echo $count. " ~ ";
-		echo $row->ip . " ~ \n";  
-	    echo "<br />";
-	   }
-	}
-    catch(Exception $e)
-    {
-        /*** if we are here, something has gone wrong with the database ***/
-        $message = 'We are unable to process your request. Please try again later"';
-    }
-echo "<hr />";
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<?php
+include 'db/db.php';
 ?>
+<html>
+<head>
+  <title> select distict</title>
+  <link rel="stylesheet" type="text/css" href="solarized.css">
+</head>
+<body>
+<div class = "data">
+UNIQUE IP ADDRESSES <hr />
+<?php
+ $programs = array("Tri-Tech","Auto Body","Auto Systems","Construction","Cosmetology",
+ "Culinary Arts","Cyber Security","Digital Arts and Filmmaking","Dentistry","Diesel",
+ "Early Childhood Education","Firefighting","Carrers In Healthcare","Law Enforcement",
+ "Nursing","Pre-Veterinary","Radio","Teen Parenting","Video Game Design","Welding","LOC");
+$connection = mysqli_connect("localhost",$username,$password);
+$dbname = "stream";
+mysqli_select_db( $connection,$dbname);
+for ($n = 0; $n < 21; $n++){
+		echo "$programs[$n]";
+		$sql = "select distinct ip from stream.hits where pagename = \"$programs[$n]\"";
+		//echo "$sql";
+		$result = mysqli_query ($connection,$sql);
+		$therows = mysqli_num_rows($result);
+		echo "= $therows hits.<br><br>";
+		while ($row = mysqli_fetch_row($result)){
+			for ($i=0; $i<mysqli_num_fields($result); $i++){								
+				echo "$row[$i] * ";		
+			}
+			echo "<br> ";
+	 	}
+ echo "<hr />";
+}
 
+
+  	mysqli_close($connection);
+	
+?>
+</div>
+<footer>
+	<center>
+<div style="background-color:#002b36; color:white;padding:5px;">#002b36;</div>
+<div style="background-color:#073642; color:white;padding:5px;">#073642;</div>
+<div style="background-color:#586e75; color:white;padding:5px;">#586e75;</div>
+<div style="background-color:#657b83; color:white;padding:5px;">#657b83;</div>
+<div style="background-color:#839496; color:white;padding:5px;">#839496;</div>
+<div style="background-color:#93a1a1; color:white;padding:5px;">#93a1a1;</div>
+<div style="background-color:#eee8d5; color:white;padding:5px;">#eee8d5;</div>
+<div style="background-color:#fdf6e3; color:white;padding:5px;">#fdf6e3;</div>
+<div style="background-color:#b58900; color:white;padding:5px;">#b58900;</div>
+<div style="background-color:#cb4b16; color:white;padding:5px;">#cb4b16;</div>
+<div style="background-color:#dc322f; color:white;padding:5px;">#dc322f;</div>
+<div style="background-color:#d33682; color:white;padding:5px;">#d33682;</div>
+<div style="background-color:#6c71c4; color:white;padding:5px;">#6c71c4;</div>
+<div style="background-color:#268bd2; color:white;padding:5px;">#268bd2;</div>
+<div style="background-color:#2aa198; color:white;padding:5px;">#2aa198;</div>
+<div style="background-color:#859900; color:white;padding:5px;">#859900;</div>
+
+</center>
+
+</footer>
 </body>
-</html>
+</html>  
